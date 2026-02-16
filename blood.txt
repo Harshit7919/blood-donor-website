@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakt Daan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .hero { background: linear-gradient(to right, #dc3545, #6c757d); color: white; padding: 50px 0; }
+        .section { padding: 40px 0; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container">
+            <a class="navbar-brand" href="#">Rakt Daan</a>
+            <div class="navbar-nav">
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#register">Register</a>
+                <a class="nav-link" href="#centers">Find Centers</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero text-center">
+        <div class="container">
+            <h1>Save Lives: Donate Blood Today</h1>
+            <p>Every donation can help up to three people. Learn more and get involved.</p>
+            <a href="#register" class="btn btn-light btn-lg">Register Now</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Blood Donation</h2>
+            <p>Blood donation is safe and takes about 10-15 minutes. Donors must be 17+ (or 16 with consent), weigh 110 lbs+, and be in good health. Benefits include free health screenings and the joy of saving lives.</p>
+            <ul>
+                <li>Whole blood donation: Every 56 days.</li>
+                <li>Plasma donation: Every 28 days.</li>
+                <li>Platelet donation: Every 7 days.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="register" class="section bg-light">
+        <div class="container">
+            <h2>Register as a Donor</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="tel" class="form-control" id="phone">
+                </div>
+                <div class="mb-3">
+                    <label for="bloodtype" class="form-label">Blood Type (Optional)</label>
+                    <select class="form-control" id="bloodtype">
+                        <option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option><option>O+</option><option>O-</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-danger">Submit</button>
+            </form>
+            <p class="mt-3">Note: This is a demo form. For real use, integrate with a backend like Google Forms or a database.</p>
+        </div>
+    </section>
+
+    <section id="centers" class="section">
+        <div class="container">
+            <h2>Find Donation Centers</h2>
+            <p>Use the map below or search for centers near you.</p>
+            <!-- Placeholder for a map; replace with actual embed -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537353153166!3d-37.816279742021665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d4a9c8a388b!2sRed%20Cross%20Blood%20Service!5e0!3m2!1sen!2sus!4v1633020000000!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: info@RaktDaan.org | Phone: (123) 456-7890</p>
+            <p>Address: 123 Health St, City, State 12345</p>
+        </div>
+    </section>
+
+    <footer class="bg-danger text-white text-center py-3">
+        <p>&copy; 2023 Blood Donation Center. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
